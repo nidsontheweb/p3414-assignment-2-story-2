@@ -1,66 +1,292 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> P3471, Assessment 2: Creative Project</title>
-    <style>
-        body { 
-            font-family: optima; 
-            margin: 0 20px;
-            padding: 0;
-            background-color: #304863;
-        }
-        header {
-            background-color: #304863;
-            padding: 20px;
-            margin-bottom: 30px;
-        }
-        /* Style for the image container */
-        .image-container {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px; /* Optional: adds slightly rounded corners */
-        }
-		h5 {
-			color: white;
-			text-align: left;
-		    font-family: optima;
-            background-color: #304863;
-		}
-	    h6 {
-		    color: white ;
-			text-align: right;
-		    font-family: optima;
-            background-color: #304863;
-		}
-		p {
-			color: white;
-			font-family: optima;
-		}
-		a {
-    		color: white;
-    		text-decoration: none;
-		}
-    </style>
-</head>
-<body>
-	<header>
-		<h5> P3471: Digital Tools and Data Journalism </h5>
-	<h5>
-		<a href="https://nidsontheweb.github.io/p3414-assignment-2-story-1/"> Story 1 </a>
-	</h5>
-	<h5> 
-		<a href="https://nidsontheweb.github.io/p3414-assignment-2-story-2/"> Story 2 </a>
-	</h5>
+<title>P3471, Assessment 2: Creative Project</title>
+<!--Google font: Coda-->>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&display=swap" rel="stylesheet">
+<style>
+    /*#5B062E*/
+html {
+    scroll-behavior: smooth;
+}
 
-		 <a href="https://www.strath.ac.uk/"> 
-			 <img src="university-of-strathclyde-logo.png" alt="University of Strathclyde logo" width="20" height="30">
-		</a>
-	<h6> Assessment 2: Creative project </h6>
-	<p> 202208970 </p>
-	</header>
+body {
+    font-family: 'Coda', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+p {
+    color: white;
+    margin: 30px 60px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.page-break {
+    margin: 0 30px;
+}
+.page-break img {
+    width: 100%;
+    height: 7vh;
+    display: block;
+}
+
+header p {
+    color: white;
+    margin: 0;
+    font-size: 8px;
+}
+hr {
+    margin: 60px 200px;
+    border-top: 2px solid white;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    background-color: black;
+    margin: 30px;
+}
+header h5 {
+    color: white;
+    font-size: 10px;
+    margin: 0;
+}
+.header-left nav {
+    display: flex;
+    gap: 20px;
+}
+.header-left nav a {
+    color: white;
+    font-size: 10px;
+}
+.header-left nav a:hover {
+    text-decoration: underline;
+}
+
+.header-center img {
+    height: 60px;
+}
+.header-right {
+    white-space: nowrap;
+    text-align: right;
+    min-width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+header h6 {
+    color: white;
+    font-size: 10px;
+    margin: 0 30px;
+}
+
+.hero {
+    background-image: url('header-background.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px;
+}
+.hero h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+    padding: 200px 0 30px 0;
+}
+.hero h2 {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 30px 0;
+}
+.hero img {
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 80px;
+    background-image: url('sophie-header-bg-blur2.png');
+    background-size: cover;
+    background-position: center;
+}
+.intro-img {
+    width: 1080px;
+    height: 500px;
+    overflow: hidden;
+    margin: 30px 60px;
+}
+.intro-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    align-items: center;
+}
+
+#section-1 {
+    display: flex;
+    align-items: center;
+}
+.section-1-text {
+    flex: 2;
+    text-align: left;
+    margin: 30px;
+}
+.section-1-timeline {
+    flex: 2;
+    width: 100%;
+    max-height: 650px;
+    margin: 60px;
+}
+
+#stat-section {
+    display: flex;
+    align-items: center;
+    padding: 0 450px 30px 60px;
+}
+.stat-number h1 {
+    font-size: 120px;
+    color: #9ADC00;
+    margin: 0;
+    line-height: 0.9;
+}
+.stat-number h2 {
+    font-size: 100px;
+    color: #9ADC00;
+    margin: 0;
+    line-height: 0.9;
+    text-align: right;
+}
+.stat-text p {
+    font-size: 17px;
+    color: white;
+}
+
+#section-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 30px 0 0;
+}
+.section-2-text {
+    flex: 2;
+    text-align: right;
+}
+.section-2-storymap {
+    flex: 2;
+    width: 100%;
+    height: 750px;
+    margin: 60px;
+    align-items: left;
+}
+
+#stat-section-2 {
+    display: flex;
+    align-items: center;
+    margin: 60px 30px 60px 30px;
+    gap: 30px;
+}
+.stat-number-2 h1 {
+    font-size: 120px;
+    color: #9ADC00;
+    margin: 0 0 0 30px;
+    line-height: 0.9;
+    text-align: right;
+}
+.stat-number-2 h2 {
+    font-size: 70px;
+    color: #9ADC00;
+    margin: 0;
+    line-height: 0.9;
+    text-align: right;
+}
+.stat-text-2 p {
+    font-size: 17px;
+    color: white;
+    text-align: left;
+}
+.stat-chart-2 {
+    flex: 1;
+    min-width: 200px;
+    margin: 0 60px;
+}
+</style>
+</head>
+
+
+<body>
+<header>
+    <div class="header-left">
+        <nav>
+            <h5>P3471: Digital Tools and Data Journalism</h5>
+            <a href="https://nidsontheweb.github.io/p3414-assignment-2-story-1/">Story 1</a>
+            <a href="https://nidsontheweb.github.io/p3414-assignment-2-story-2/">Story 2</a>
+        </nav>
+    </div>
+    <div class="header-center">
+        <a href="https://www.strath.ac.uk/">
+            <img src="university-of-strathclyde-logo.png" alt="University of Strathclyde logo">
+        </a>
+    </div>
+    <div class="header-right">
+        <h5>Assessment 2: Creative Project</h5>
+        <p>Ref. no.: 202208970</p>
+    </div>
+</header>
+
+<div class="hero">
+    <h1>SOPHIE's story</h1>
+    <h2>Subheading</h2>
+    <a href="#intro">
+        <img src="down-arrow.png" alt="click to scroll">
+        <br>
+    </a>
+    <br><br><br><br><br><br>
+    <hr>
+</div>
+
+<div id="intro">
+    <br><br>
+    <p style="font-size: 25px;">SOPHIE or Sophie Xeon was a legendary British music producer, songwriter and DJ with a diverse discography. She came out as transgender through a music video of the single, ‘’ It's Okay to Cry" in their Grammy-winning album ‘Oil of Every Pearl’s Un-Insides’. Her music has been described as experimental sound design, sugary synthesiser textures, featuring high-pitched vocals and drawing beats from genres like UK garage, mainstream pop and hip-hop. She was also known for her work with Charlie XCX (on the song <i>Vroom Vroom</i>), Madonna (for <i>Bitch, I’m Madonna</i>), Kim Petras and more.</p>
+    <br>
+    <div class="intro-img">
+        <img src="sophie-header.png">
+    </div>
+    <br>
+    <p style="font-size: 25px;">SOPHIE passed away on January 30, 2021, in the early hours of the morning at her home in Athens. According to her management, she accidentally slipped and fell after climbing to watch the full moon.</p>
+</div>
+
+<p>Although many sites claim she were born in Glasgow, an article by SOPHIE’s former partner - Tzef Montana - confirms that the artist was actually born in Northampton. Her brother Benny Long said their family did have a “Scottish connection” – their father was born there – but little detail exists of the childhoods of the Long siblings. SOPHIE was the second oldest out of four siblings and was always obsessed with music along with their brother Ben. Their favourite artists included The Prodigy and the Pet Shop Boys.</p>
+<p>Furthered by their father’s enthusiasm toward music, SOPHIE began making their own music after being given an old synthesiser by their father’s friend and started sampling and experimenting with sounds around the house. She began DJing when she was a teenager, and would go out clubbing with her brother, Ben.</p>
+
+<div id="section-1">
+    <div class="section-1-timeline">
+        <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2%3A2PACX-1vQX2easWDmjfs2iXnLd0u08kXbtT-GJhl2mCPUtSVKD9PxTpZ9zse5KtSZoJk0DwR36xi5HB1eKBBK8&font=Bitter-Raleway&lang=en&initial_zoom=2&theme=contrast&width=100%25&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+    </div>
+</div>
+
+<p>SOPHIE moved to Berlin for art school, subsequently joining a band called ‘Motherland’. Consisting of Sabine Gottfried, Matthew Lutz-Kinoy and Marcella Dvsi, and the group released their music on Soundcloud and toured Berlin, the UK, and Amsterdam later on between 2008-2009. The band released singles, two albums and featured music in a film called "Dear Mr/Mrs", for which SOPHIE also made the score. SOPHIE has collaborated with bandmate Lutz-Kinoy, making music for performance art projects involving multiple media. Other members like Marcella Dvsi have featured in SOPHIE’s songs.</p>
+<p></p>
+
+<div id="section-2">
+    <div class="section-2-storymap">
+        <iframe src="https://uploads.knightlab.com/storymapjs/7396041ee6a2bcebe8a56e2db748eeed/sophie-storymap/index.html" frameborder="0" width="100%" height="650"></iframe>
+    </div>
+</div>
 </body>
 </html>
